@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: postgres_db
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin1234
+      POSTGRES_DB: shoppingmall
+    ports:
+      - "5433:5432"
